@@ -1,0 +1,64 @@
+/* xxl screen starts */
+@media screen and (max-width:1400px) {
+    
+}
+/* xxl screen ends */
+
+
+/* xl screen starts */
+@media screen and (max-width:1200px) {
+    
+}
+/* xl screen ends */
+
+
+/* lg screen starts */
+@media screen and (max-width:992px) {
+    .main-heading{
+        font-size: 2rem;
+    }
+
+    .hero-container{
+        min-height: 180px;
+        width: 100%;
+    }
+
+    h1{
+        font-size: 3.5rem;
+    }
+
+    .task-add__btn{
+        padding: 0.55rem 2rem ;
+    }
+}
+/* lg screen ends */
+
+
+/* md screen starts */
+@media screen and (max-width:768px) {
+    .navbar-nav .nav-link{
+        padding: 0.6rem 2rem !important;
+    }
+
+    .task-add__btn{
+        padding: 0.55rem 1.5rem;
+    }
+}
+/* md screen ends */
+
+
+/* sm screen starts */
+@media screen and (max-width:576px) {
+    .navbar-nav .nav-link{
+        padding: 0.5rem 1.5rem !important;
+    }
+
+}
+/* sm screen ends */
+
+
+/* extra-sm screen starts */
+@media screen and (max-width:400px) {
+    
+}
+/* extra-sm screen ends */

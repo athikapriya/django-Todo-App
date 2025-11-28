@@ -1,0 +1,157 @@
+/* reset code and common code starts here */
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #f4f4f5;
+    font-family: "Open Sans", sans-serif;
+}
+
+:root{
+    --brand-color : #196638;
+    --secondary-color : #fff;
+    --tertiary-color: #160018;
+    --border-radius  : 6px;
+}
+
+.main-heading{
+    font-size: 2.5rem;
+    font-weight: 650;
+}
+
+.mybtn{
+    font-size: 0.9rem;
+}
+
+/* reset code and common code ends here */
+
+
+/* header section starts here */
+.hero-container{
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(../images/hero-image.webp);
+    background-repeat: no-repeat;
+    background-position: center center;
+    min-height: 200px;
+    width: 98%;
+    margin: 0px auto;
+    border-radius: 4px;
+}
+
+h1{
+    font-size: 4rem;
+    font-weight: 600;
+    letter-spacing: 0.05rem;
+    margin: 0px;
+}
+
+/* header section ends here */
+
+
+/* nav section starts here */
+.navbar-nav{
+    display: flex;
+    flex-direction: row;
+    margin: 0px auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-item, .nav-link{
+    display: inline-block;
+}
+
+.navbar-nav .nav-link{
+    font-size: 0.9rem;
+    font-weight: 500;
+    letter-spacing: 0.01rem;
+    padding: 0.6rem 4rem !important;
+    background-color: #B1BFAB;
+    color: var(--tertiary-color);
+    border-radius: var(--border-radius);
+}
+
+.navbar-nav .nav-link.active{
+    background-color: var(--brand-color);
+    color: var(--secondary-color);
+}
+
+.nav-pending{
+    border-right: 0.15rem solid var(--secondary-color);
+    border-left: 0.15rem solid var(--secondary-color);
+    
+}
+
+.nav-overdue{
+    border-top-right-radius: var(--border-radius);
+    border-bottom-right-radius: var(--border-radius);
+}
+
+.nav-link.active {
+    background-color: var(--brand-color) !important;
+    color: var(--secondary-color) !important;
+}
+
+/* nav section ends here */
+
+
+/* main heading section starts */
+.task-add__btn{
+    background-color: var(--brand-color);
+    color: var(--secondary-color);
+    padding: 0.55rem 3rem;
+    border-radius: var(--border-radius);
+}
+
+.task-add__btn:hover{
+    background-color: #157c3d;
+}
+
+#task-section form{
+    width:100%;
+}
+
+#task-section .fa-plus{
+    font-size: 0.8rem;
+}
+
+    /* search btn */
+.search-btn input{
+    border: none;
+    border-radius: 0%;
+    border-bottom: 1px solid #000;
+    border-color: #ced4da;
+    padding-right: 0;
+}
+
+
+input:focus,
+button:focus,
+.form-control:focus,
+.btn:focus {
+    outline: none !important;
+    box-shadow: none !important;
+    border-color: #ced4da !important; /* default border color (optional) */
+}
+
+.search-btn .btn{
+    background-color: var(--secondary-color);
+    border: none;
+    border-radius: 0%;
+    border-bottom: 1px solid #ced4da;
+}
+
+.search-btn .btn .fa-magnifying-glass{
+    color: var(--tertiary-color);
+}
+
